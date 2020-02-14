@@ -1,7 +1,7 @@
 # Личный проект «Что посмотреть» [![Build status][travis-image]][travis-url]
 
 * Студент: [Qluqwa Qluqwa](https://up.htmlacademy.ru/react/3/user/635523).
-* Наставник: `Неизвестно`.
+* Наставник: [Qluqwa Qluqwa](https://up.htmlacademy.ru/react/3/user/635523).
 
 ---
 
