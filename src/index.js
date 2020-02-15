@@ -8,7 +8,9 @@ const FilmMock = {
   DATE: 2014
 };
 
+const FilmList = [`Fantastic Beasts`, `Bohemian Rhapsody`, `Macbeth`];
+
 ReactDOM.render(
-    <App film={FilmMock}/>,
+    <App film={FilmMock} filmList={FilmList}/>,
     document.querySelector(`#root`)
 );
