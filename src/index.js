@@ -10,7 +10,9 @@ const FilmMock = {
 
 const FilmList = [`Fantastic Beasts`, `Bohemian Rhapsody`, `Macbeth`];
 
+const handleTitleClick = () => {};
+
 ReactDOM.render(
-    <App film={FilmMock} filmList={FilmList}/>,
+    <App film={FilmMock} filmList={FilmList} handleTitleClick={handleTitleClick} />,
     document.querySelector(`#root`)
 );
