@@ -3,7 +3,7 @@ import MovieCard from "../movie-card/movie-card.jsx";
 import PropTypes from "prop-types";
 
 const Main = (props) => {
-  const {film, filmList} = props;
+  const {film, filmList, handleTitleClick} = props;
   return (<React.Fragment>
     <section className="movie-card">
       <div className="movie-card__bg">
@@ -34,12 +34,14 @@ const Main = (props) => {
           </div>
 
           <div className="movie-card__desc">
-            {/* eslint-disable-next-line react/prop-types */}
-            <h2 className="movie-card__title">{film.TITLE}</h2>
+            <h2
+              onClick={handleTitleClick}
+              className="movie-card__title"
+            >
+              {film.TITLE}
+            </h2>
             <p className="movie-card__meta">
-              {/* eslint-disable-next-line react/prop-types */}
               <span className="movie-card__genre">{film.TYPE}</span>
-              {/* eslint-disable-next-line react/prop-types */}
               <span className="movie-card__year">{film.DATE}</span>
             </p>
 
@@ -137,6 +139,7 @@ Main.propTypes = {
     TYPE: PropTypes.string.isRequired,
     DATE: PropTypes.number.isRequired
   }).isRequired,
-  filmList: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired
+  filmList: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  handleTitleClick: PropTypes.func.isRequired
 };
 
