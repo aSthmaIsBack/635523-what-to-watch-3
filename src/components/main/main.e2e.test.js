@@ -9,8 +9,23 @@ const FilmMock = {
   DATE: 2017
 };
 
-const FilmList = [`Beasts`, `Rhapsody`, `True Detective`];
-
+const FilmList = [
+  {
+    id: 5,
+    title: `Beasts`,
+    src: `img/fantastic-beasts-the-crimes-of-grindelwald.jpg`
+  },
+  {
+    id: 3,
+    title: `Rhapsody`,
+    src: `img/fantastic-beasts-the-crimes-of-grindelwald.jpg`
+  },
+  {
+    id: 2,
+    title: `Detective`,
+    src: `img/fantastic-beasts-the-crimes-of-grindelwald.jpg`
+  },
+];
 
 Enzyme.configure({
   adapter: new Adapter(),

@@ -258,78 +258,89 @@ Array [
       <div
         className="catalog__movies-list"
       >
-        <article
-          className="small-movie-card catalog__movies-card"
+        <div
+          className="catalog__movies-list"
         >
-          <div
-            className="small-movie-card__image"
+          <article
+            className="small-movie-card catalog__movies-card"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
-            <img
-              alt="Fantastic Beasts: The Crimes of Grindelwald"
-              height="175"
-              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-              width="280"
-            />
-          </div>
-          <h3
-            className="small-movie-card__title"
-          >
-            <a
-              className="small-movie-card__link"
-              href="movie-page.html"
+            <div
+              className="small-movie-card__image"
             >
-              Beasts
-            </a>
-          </h3>
-        </article>
-        <article
-          className="small-movie-card catalog__movies-card"
-        >
-          <div
-            className="small-movie-card__image"
-          >
-            <img
-              alt="Fantastic Beasts: The Crimes of Grindelwald"
-              height="175"
-              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-              width="280"
-            />
-          </div>
-          <h3
-            className="small-movie-card__title"
-          >
-            <a
-              className="small-movie-card__link"
-              href="movie-page.html"
+              <img
+                alt="Fantastic Beasts: The Crimes of Grindelwald"
+                height="175"
+                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+                width="280"
+              />
+            </div>
+            <h3
+              className="small-movie-card__title"
             >
-              Rhapsody
-            </a>
-          </h3>
-        </article>
-        <article
-          className="small-movie-card catalog__movies-card"
-        >
-          <div
-            className="small-movie-card__image"
+              <a
+                className="small-movie-card__link"
+                href="movie-page.html"
+              >
+                Beasts
+              </a>
+            </h3>
+          </article>
+          <article
+            className="small-movie-card catalog__movies-card"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
           >
-            <img
-              alt="Fantastic Beasts: The Crimes of Grindelwald"
-              height="175"
-              src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
-              width="280"
-            />
-          </div>
-          <h3
-            className="small-movie-card__title"
-          >
-            <a
-              className="small-movie-card__link"
-              href="movie-page.html"
+            <div
+              className="small-movie-card__image"
             >
-              True Detective
-            </a>
-          </h3>
-        </article>
+              <img
+                alt="Fantastic Beasts: The Crimes of Grindelwald"
+                height="175"
+                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+                width="280"
+              />
+            </div>
+            <h3
+              className="small-movie-card__title"
+            >
+              <a
+                className="small-movie-card__link"
+                href="movie-page.html"
+              >
+                Rhapsody
+              </a>
+            </h3>
+          </article>
+          <article
+            className="small-movie-card catalog__movies-card"
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+          >
+            <div
+              className="small-movie-card__image"
+            >
+              <img
+                alt="Fantastic Beasts: The Crimes of Grindelwald"
+                height="175"
+                src="img/fantastic-beasts-the-crimes-of-grindelwald.jpg"
+                width="280"
+              />
+            </div>
+            <h3
+              className="small-movie-card__title"
+            >
+              <a
+                className="small-movie-card__link"
+                href="movie-page.html"
+              >
+                Detective
+              </a>
+            </h3>
+          </article>
+          ;
+        </div>
       </div>
       <div
         className="catalog__more"

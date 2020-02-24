@@ -3,6 +3,8 @@
 exports[`Render MovieCard 1`] = `
 <article
   className="small-movie-card catalog__movies-card"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}
 >
   <div
     className="small-movie-card__image"
@@ -21,7 +23,7 @@ exports[`Render MovieCard 1`] = `
       className="small-movie-card__link"
       href="movie-page.html"
     >
-      True Detective
+      Beasts
     </a>
   </h3>
 </article>

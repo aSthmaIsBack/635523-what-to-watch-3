@@ -1,5 +1,5 @@
 import React from "react";
-import MovieCard from "../movie-card/movie-card.jsx";
+import MovieList from "../movie-list/movies-list.jsx";
 import PropTypes from "prop-types";
 
 const Main = (props) => {
@@ -102,11 +102,9 @@ const Main = (props) => {
         </ul>
 
         <div className="catalog__movies-list">
-          {filmList.map((item, index) => {
-            return (
-              <MovieCard key={index} filmDetail={item}/>
-            );
-          })}
+          <MovieList
+            filmList={filmList}
+          />
         </div>
 
         <div className="catalog__more">
@@ -139,7 +137,10 @@ Main.propTypes = {
     TYPE: PropTypes.string.isRequired,
     DATE: PropTypes.number.isRequired
   }).isRequired,
-  filmList: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  filmList: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired
+  })).isRequired,
   handleTitleClick: PropTypes.func.isRequired
 };
 
