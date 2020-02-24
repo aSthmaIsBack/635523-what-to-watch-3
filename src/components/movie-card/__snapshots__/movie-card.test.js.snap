@@ -21,7 +21,7 @@ exports[`Render MovieCard 1`] = `
       className="small-movie-card__link"
       href="movie-page.html"
     >
-      True Detective
+      Beasts
     </a>
   </h3>
 </article>

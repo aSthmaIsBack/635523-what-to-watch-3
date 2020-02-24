@@ -8,7 +8,16 @@ const FilmMock = {
   DATE: 2017
 };
 
-const FilmList = [`Beasts`, `Rhapsody`, `True Detective`];
+const FilmList = [
+  {
+    title: `Beasts`,
+    src: `img/fantastic-beasts-the-crimes-of-grindelwald.jpg`
+  },
+  {
+    title: `Rhapsody`,
+    src: `img/fantastic-beasts-the-crimes-of-grindelwald.jpg`
+  }
+];
 
 it(`Render Main`, () => {
   const tree = renderer
