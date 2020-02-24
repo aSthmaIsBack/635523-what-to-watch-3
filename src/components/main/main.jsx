@@ -104,7 +104,7 @@ const Main = (props) => {
         <div className="catalog__movies-list">
           {filmList.map((item, index) => {
             return (
-              <MovieCard key={index} filmDetail={item}/>
+              <MovieCard key={index} title={item.title} src={item.src}/>
             );
           })}
         </div>
@@ -139,7 +139,10 @@ Main.propTypes = {
     TYPE: PropTypes.string.isRequired,
     DATE: PropTypes.number.isRequired
   }).isRequired,
-  filmList: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  filmList: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired
+  })).isRequired,
   handleTitleClick: PropTypes.func.isRequired
 };
 

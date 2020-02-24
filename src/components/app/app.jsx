@@ -17,6 +17,9 @@ App.propTypes = {
     TYPE: PropTypes.string.isRequired,
     DATE: PropTypes.number.isRequired
   }).isRequired,
-  filmList: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
+  filmList: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired
+  })).isRequired,
   handleTitleClick: PropTypes.func.isRequired
 };
